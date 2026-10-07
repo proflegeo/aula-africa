@@ -41,15 +41,23 @@ nav button{background:var(--faixa);color:var(--texto);border:1px solid var(--lin
 nav button:hover{border-color:var(--destaque)}
 #pos{font-size:2vh;color:var(--suave)}
 .btn-rel{background:var(--faixa);color:var(--texto);border:1px solid var(--linha);border-radius:6px;font-size:2.6vh;padding:1.2vh 2vw;cursor:pointer;font-family:inherit}
+.expl .cols{display:grid;grid-template-columns:1fr 1fr;gap:2.5vw;flex:1;min-height:0}
+.expl h3{font-size:3vh;color:var(--destaque);margin-bottom:1.2vh;text-transform:uppercase;letter-spacing:.05em}
+.expl ul{list-style:none;display:flex;flex-direction:column;gap:1.3vh}
+.expl li{font-size:3.05vh;line-height:1.28;padding-left:1.6vw;position:relative}
+.expl li::before{content:"";position:absolute;left:0;top:1.1vh;width:.7vh;height:.7vh;background:var(--destaque);border-radius:50%}
+.expl li b{color:#fff}
+.expl .nota{font-size:1.8vh;color:var(--suave);margin-top:1vh}
+@media (max-width:800px){.expl .cols{grid-template-columns:1fr;overflow:auto}}
 .dica{font-size:1.7vh;color:#6f7780}
 </style>
 </head>
 <body>
 
-<section class="tela capa" data-tipo="capa">
+<section class="tela capa">
   <div class="num">3ª SÉRIE · GEOGRAFIA · PROF. LEGEO</div>
   <h1>África: economia e geopolítica</h1>
-  <h2>A banca usa a notícia; cobra a estrutura por trás dela.</h2>
+  <h2>A notícia é o pano de fundo; a banca cobra a estrutura.</h2>
   <div class="chaves">
     <div class="chave"><b>1. Herança colonial</b><span>fronteiras traçadas de fora, Estados que juntam povos rivais</span></div>
     <div class="chave"><b>2. Dependência de produtos primários</b><span>vende minério, petróleo e cacau; compra o industrializado</span></div>
@@ -57,105 +65,69 @@ nav button:hover{border-color:var(--destaque)}
     <div class="chave"><b>4. Disputa de potências</b><span>França saindo; China, Rússia, EUA e Golfo entrando</span></div>
   </div>
 </section>
-
-<!-- Cada vídeo: data-id, data-ini e data-fim em segundos (fim vazio = até o final).
-     Refeito em 07/10/2026 com a conta de tempo: vídeos cortados, 10 questões em sala. -->
 <section class="tela" data-id="FXgJiThAMl8" data-ini="0" data-fim="">
-  <div class="topo"><span class="num">VÍDEO 1</span><h1>O Congo de Leopoldo II</h1><span class="fonte">BBC News Brasil · 7 min</span></div>
-  <p class="olho"><b>De olho em:</b> a partilha, o que se tirava do Congo e o que sobrou depois da independência</p>
+  <div class="topo"><span class="num">VÍDEO 1</span><h1>O Congo de Leopoldo II</h1><span class="fonte">BBC News Brasil · 7:39</span></div>
   <div class="video"><div class="moldura"></div></div>
 </section>
-<section class="tela pausa">
-  <div class="rotulo">PAUSA · 2 MINUTOS · ANOTE</div><h1>Vídeo 1 — O Congo</h1>
-  <ol>
-    <li><i>1.1</i>Em que conferência a África foi partilhada? O que Leopoldo II recebeu, que recursos tirava e como?</li>
-    <li><i>1.2</i>As fronteiras traçadas pelos europeus respeitaram os povos? Que problema isso deixou?</li>
-  </ol>
-  <p class="cai">Cai assim: questões 1 e 2</p>
+<section class="tela expl">
+  <div class="topo"><span class="num">CHAVE 1 · HERANÇA COLONIAL</span><h1>Partilha e fronteiras artificiais</h1></div>
+  <div class="cols"><div class="col"><h3>A partilha</h3><ul><li><b>Conferência de Berlim (1884–85)</b>: potências europeias fixam as regras da ocupação — nenhum africano na mesa</li><li>Em 1914, só <b>Etiópia</b> e <b>Libéria</b> seguiam independentes</li><li>Economia colonial: extrair matéria-prima e mandar para a metrópole (borracha, marfim, minério, cacau)</li><li>Congo: posse pessoal de Leopoldo II → colônia belga (1908) → independência (1960) → Mobutu/<b>Zaire</b> → <b>RDC</b> (1997)</li></ul></div><div class="col"><h3>As fronteiras</h3><ul><li>Linhas traçadas de fora, muitas retas: <b>separaram um mesmo povo</b> (somalis, bakongos) e <b>juntaram rivais</b> num só Estado</li><li>Ex.: <b>Nigéria</b> — hauçá-fulanis, iorubás e ibos → guerra de <b>Biafra</b> (1967–70)</li><li>Independências: anos 1950–70; <b>1960, o «Ano da África»</b> (17 países)</li><li><b>OUA (1963–64)</b>: manter as fronteiras coloniais para evitar guerras entre vizinhos → Estados multiétnicos, conflitos internos, secessões (<b>Eritreia</b> 1993, <b>Sudão do Sul</b> 2011)</li></ul></div></div>
 </section>
 <section class="tela" data-id="TMmZSssiZ9M" data-ini="0" data-fim="">
-  <div class="topo"><span class="num">VÍDEO 2</span><h1>Minérios de conflito</h1><span class="fonte">BBC News Brasil · 2 min</span></div>
-  <p class="olho"><b>De olho em:</b> quais minérios, onde, e por que a riqueza alimenta a guerra</p>
+  <div class="topo"><span class="num">VÍDEO 2</span><h1>Minérios de conflito</h1><span class="fonte">BBC News Brasil · 2:03</span></div>
   <div class="video"><div class="moldura"></div></div>
 </section>
-<section class="tela pausa">
-  <div class="rotulo">PAUSA · 2 MINUTOS · ANOTE</div><h1>Vídeo 2 — Minérios de conflito</h1>
-  <ol>
-    <li><i>2.1</i>Quais minérios, onde ficam, e como o dinheiro deles sustenta o conflito?</li>
-    <li><i>2.2</i>O que é a «maldição dos recursos»? Por que um país rico em minério pode continuar pobre?</li>
-  </ol>
-  <p class="cai">Cai assim: questão 3</p>
+<section class="tela expl">
+  <div class="topo"><span class="num">CHAVE 2 · DEPENDÊNCIA</span><h1>A «maldição dos recursos»</h1></div>
+  <div class="cols"><div class="col"><h3>Economia primário-exportadora</h3><ul><li>Herança colonial: exporta <b>produto primário</b>, importa <b>industrializado</b> — a velha <b>divisão internacional do trabalho</b></li><li>Pauta concentrada em 1 ou 2 produtos: petróleo (Nigéria, Angola), cobre e cobalto (RDC, Zâmbia), cacau (Costa do Marfim, Gana)</li><li>Preço decidido lá fora: quando a commodity cai, o país inteiro cai junto</li><li><b>RDC</b>: cerca de 70% do cobalto do mundo — baterias de celular e de carro elétrico</li></ul></div><div class="col"><h3>Por que a riqueza não vira desenvolvimento</h3><ul><li>A renda fica com o Estado e uma elite → <b>corrupção</b> e pouco investimento no resto da economia</li><li><b>Minérios de conflito</b>: grupos armados controlam minas (coltan, ouro, estanho, tungstênio no leste da RDC) e financiam a guerra</li><li>Antes: os «diamantes de sangue» de Serra Leoa e Angola</li><li>Interesse externo: quem compra o minério nem sempre pergunta de onde veio</li></ul></div></div>
 </section>
 <section class="tela" data-id="_FK7YB0oOE8" data-ini="0" data-fim="270">
   <div class="topo"><span class="num">VÍDEO 3</span><h1>A China na África</h1><span class="fonte">BBC News Brasil · trecho 0:00–4:30</span></div>
-  <p class="olho"><b>De olho em:</b> o que a China compra, o que vende e o que oferece</p>
   <div class="video"><div class="moldura"></div></div>
 </section>
-<section class="tela pausa">
-  <div class="rotulo">PAUSA · 2 MINUTOS · ANOTE</div><h1>Vídeo 3 — A China na África</h1>
-  <ol>
-    <li><i>3.1</i>O que a China compra da África e o que vende? Por que a balança é desequilibrada?</li>
-    <li><i>3.2</i>Por que os empréstimos chineses são criticados? O que a China não exige, e o Ocidente exige?</li>
-  </ol>
-  <p class="cai">Cai assim: questões 4 e 5</p>
+<section class="tela expl">
+  <div class="topo"><span class="num">CHAVE 4 · DISPUTA DE POTÊNCIAS</span><h1>A China na África</h1></div>
+  <div class="cols"><div class="col"><h3>O que a China faz</h3><ul><li><b>Maior parceiro comercial</b> da África desde 2009</li><li>Compra <b>minério e petróleo</b>; vende <b>manufaturados e máquinas</b> → balança desequilibrada</li><li><b>Cinturão e Rota</b> (2013): portos, ferrovias e estradas — ex.: Mombaça–Nairóbi, Adis Abeba–Djibuti</li><li>Empréstimos grandes, <b>sem cobrar democracia</b> («não interferência») — negocia com civis e com ditaduras</li><li><b>Desde 01/05/2026</b>: tarifa zero para importações de 53 países africanos (conferido em 07/10/2026)</li></ul></div><div class="col"><h3>O debate</h3><ul><li><b>Parceria Sul–Sul</b>? Infraestrutura que o Ocidente não financiou; discurso de «vítimas do imperialismo»</li><li>Ou <b>neocolonialismo</b>? Mesma pauta de sempre: a África segue vendendo matéria-prima</li><li><b>Dívida</b>: a Zâmbia deu calote em 2020; críticos falam em «armadilha da dívida» — e o tema é disputado</li><li>Até 2050, mais de <b>1/4 da população mundial</b> será africana: mercado e mão de obra jovem</li></ul></div></div>
 </section>
 <section class="tela" data-id="k4TYAqamgQY" data-ini="30" data-fim="390">
   <div class="topo"><span class="num">VÍDEO 4</span><h1>Sahel, o epicentro do extremismo</h1><span class="fonte">BBC News Brasil · trecho 0:30–6:30</span></div>
-  <p class="olho"><b>De olho em:</b> onde fica, os três fatores e os golpes</p>
   <div class="video"><div class="moldura"></div></div>
 </section>
-<section class="tela pausa">
-  <div class="rotulo">PAUSA · 2 MINUTOS · ANOTE</div><h1>Vídeo 4 — Sahel</h1>
-  <ol>
-    <li><i>4.1</i>Onde fica o Sahel? Quais os três fatores que se misturam na região?</li>
-    <li><i>4.2</i>Golpes: um motivo para Mali, Burkina Faso e Níger. Por que os jihadistas crescem?</li>
-  </ol>
-  <p class="cai">Cai assim: questões 6 e 7</p>
+<section class="tela expl">
+  <div class="topo"><span class="num">CHAVES 3 E 4 · ESTADO FRÁGIL E POTÊNCIAS</span><h1>Sahel: golpes, jihadismo e a troca de padrinhos</h1></div>
+  <div class="cols"><div class="col"><h3>A região e os golpes</h3><ul><li>Faixa <b>semiárida</b> entre o Saara e a savana, do Atlântico ao Mar Vermelho; secas e desertificação</li><li>Pobreza, natalidade alta, população muito jovem</li><li><b>Cinturão do golpe</b>: Mali (2020 e 2021), Burkina Faso (2022, dois), Níger (2023) — juntas com apoio popular</li><li><b>Jihadismo</b>: grupos ligados à Al-Qaeda (JNIM) e ao Estado Islâmico ocupam o <b>vazio do Estado</b>; Boko Haram no lago Chade</li><li><b>2026</b>: Mali sob ofensiva jihadista e tuaregue (abr); golpe frustrado no Níger (ago)</li></ul></div><div class="col"><h3>Sai a França, entra a Rússia</h3><ul><li><b>Françafrique</b>: a rede de influência que a França manteve nas ex-colônias (bases, moeda, acordos)</li><li>Operação <b>Barkhane</b> (2014–22) não conteve o jihadismo → ressentimento</li><li>Tropas francesas saíram de Mali, Burkina, Níger, Chade, Costa do Marfim e Senegal (até 2025)</li><li><b>Wagner → Africa Corps</b> (Estado russo): segurança para as juntas em troca de <b>ouro</b> e acesso; propaganda anti-França</li><li><b>Aliança dos Estados do Sahel</b> (2024): Mali, Burkina e Níger — saíram da <b>CEDEAO</b> em jan/2025</li><li>Recursos em jogo: <b>urânio</b> do Níger, ouro</li></ul></div></div>
 </section>
 <section class="tela" data-id="1jIN5MKeMtI" data-ini="120" data-fim="220">
   <div class="topo"><span class="num">VÍDEO 5</span><h1>Sudão: como a guerra começou</h1><span class="fonte">Fantástico (TV Globo) · trecho 02:00–03:40</span></div>
-  <p class="olho"><b>De olho em:</b> 2019 → 2021 → abril de 2023 · e o aviso da equipe sobre o que pôde mostrar</p>
   <div class="video"><div class="moldura"></div></div>
 </section>
-<section class="tela pausa">
-  <div class="rotulo">PAUSA · 2 MINUTOS · ANOTE</div><h1>Vídeo 5 — Sudão</h1>
-  <ol>
-    <li><i>5.1</i>2019 queda de ______ → transição → 2021 ______ → 2023 guerra entre o ______ e as ______ (RSF).</li>
-    <li><i>5.2</i>Que aviso a equipe faz sobre o que pôde mostrar? Por que ele importa?</li>
-  </ol>
-  <p class="cai">Cai assim: questão 8</p>
+<section class="tela expl">
+  <div class="topo"><span class="num">CHAVES 1, 2 E 3</span><h1>Sudão: a guerra esquecida</h1></div>
+  <div class="cols"><div class="col"><h3>De onde vem</h3><ul><li>Independência em 1956; guerra Norte × Sul → <b>Sudão do Sul</b> se separa em 2011, com cerca de 3/4 do petróleo</li><li><b>Darfur (2003)</b>: milícias <b>Janjaweed</b> a serviço do governo → viram as <b>Forças de Apoio Rápido (RSF)</b> em 2013, sob Hemedti</li><li>2019: cai o ditador <b>Omar al-Bashir</b> → transição militares + civis</li><li>2021: exército e RSF dão golpe juntos → <b>abr/2023</b>: os antigos aliados entram em guerra (Burhan × Hemedti)</li></ul></div><div class="col"><h3>Hoje (conferido em 07/10/2026)</h3><ul><li>Sem cessar-fogo. A RSF tomou <b>El Fasher</b> (out/2025) e controla quase todo o <b>Darfur</b>; o exército retomou <b>Cartum</b></li><li><b>Mais de 13 milhões</b> de deslocados (dentro e fora do país) — a maior crise de deslocamento do planeta; fome</li><li><b>O ouro financia a guerra</b>; a ONU documentou indícios de apoio dos Emirados à RSF (eles negam)</li><li>«Guerra esquecida»: muito menos cobertura que Ucrânia e Gaza</li><li>A reportagem só pôde mostrar o lado do exército</li></ul></div></div>
 </section>
-<section class="tela pausa">
-  <div class="rotulo">BLOCO 6 · FALA DO PROFESSOR</div><h1>A África se integra?</h1>
-  <ol>
-    <li><i>6.1</i>Zona de Livre Comércio Continental Africana (AfCFTA, desde 2021): quase todo o continente, tarifas menores. Por que os africanos comerciam tão pouco entre si (~15%)?</li>
-    <li><i>+</i>BRICS: África do Sul, Egito e Etiópia · «Sul Global»</li>
-  </ol>
-  <p class="cai">Cai assim: questões 9 e 10</p>
+<section class="tela expl">
+  <div class="topo"><span class="num">INTEGRAÇÃO</span><h1>A África se integra?</h1></div>
+  <div class="cols"><div class="col"><h3>Blocos</h3><ul><li><b>União Africana</b> (2002, sucede a OUA): 55 membros</li><li>Blocos regionais: <b>CEDEAO</b> (oeste), <b>SADC</b> (sul), Comunidade da África Oriental</li><li><b>AfCFTA</b> — Zona de Livre Comércio Continental Africana: em vigor desde 2021, cerca de 50 países ratificaram; a maior do mundo em número de países</li><li>Objetivo: cortar tarifas e <b>barreiras não tarifárias</b>, industrializar, agregar valor</li></ul></div><div class="col"><h3>Por que é difícil</h3><ul><li>Comércio entre os próprios africanos: <b>cerca de 15%</b> do total (na União Europeia, mais de 60%)</li><li>Economias <b>parecidas</b>: todos vendem produto primário, ninguém compra do vizinho</li><li>Falta <b>infraestrutura</b>: ferrovias e estradas foram feitas para ligar a mina ao porto, não um país ao outro</li><li><b>BRICS</b>: África do Sul (2011), Egito e Etiópia (2024) · <b>Sul Global</b>: ex-colônias buscando voz fora do eixo EUA–Europa</li></ul></div></div>
 </section>
-<section class="tela capa" data-cronometro="1680">
-  <div class="num">AGORA É COM VOCÊS</div>
-  <h1>Questões 1 a 10</h1>
-  <h2>em silêncio · uma por tema, na ordem dos vídeos</h2>
-  <div id="relogio" style="font-size:22vh;font-weight:700;font-variant-numeric:tabular-nums;color:var(--destaque)">28:00</div>
+<section class="tela capa">
+  <div class="num">QUESTÕES 1 A 10</div>
+  <div id="relogio" style="font-size:24vh;font-weight:700;font-variant-numeric:tabular-nums;color:var(--destaque)">28:00</div>
   <div style="display:flex;gap:1.5vw;margin-top:2vh">
     <button class="btn-rel" data-acao="iniciar">▶ iniciar</button>
     <button class="btn-rel" data-acao="pausar">❚❚ pausar</button>
     <button class="btn-rel" data-acao="zerar">↺ zerar</button>
   </div>
 </section>
-<section class="tela capa">
-  <div class="num">CORREÇÃO</div>
-  <h1>Cada questão, qual chave?</h1>
-  <h2>1–2 herança colonial · 3–5 dependência · 6–8 Estado frágil · 9–10 integração</h2>
+<section class="tela expl">
+  <div class="topo"><span class="num">CORREÇÃO</span><h1>Cada questão, qual chave?</h1></div>
+  <div class="cols"><div class="col"><h3>Gabarito</h3><ul><li><b>1</b> C · <b>2</b> D · <b>3</b> C · <b>4</b> D · <b>5</b> E</li><li><b>6</b> E · <b>7</b> E · <b>8</b> C · <b>9</b> B · <b>10</b> B</li></ul></div><div class="col"><h3>Chaves</h3><ul><li>1–2 · herança colonial (Fuvest mapa, Uerj canção)</li><li>3–5 · dependência e China (FGV cobalto, Enem, Fuvest gráficos)</li><li>6–8 · Estado frágil (Fuvest Sahel ×2, Uerj Sudão)</li><li>9–10 · integração (Unesp, UEA)</li></ul></div></div>
 </section>
 <section class="tela capa">
   <div class="num">FECHAMENTO</div>
-  <h1 style="font-size:6vh">As quatro chaves — um exemplo de cada</h1>
-  <h2>Escreva no fim do roteiro. Para casa: questões 11 a 20.</h2>
+  <h1 style="font-size:6vh">As quatro chaves</h1>
   <div class="chaves">
-    <div class="chave"><b>1. Herança colonial</b><span>Congo, fronteiras artificiais</span></div>
-    <div class="chave"><b>2. Dependência de produtos primários</b><span>cobalto, coltan, cacau, ouro</span></div>
+    <div class="chave"><b>1. Herança colonial</b><span>Congo, fronteiras artificiais, Sudão do Sul</span></div>
+    <div class="chave"><b>2. Dependência de produtos primários</b><span>cobalto, coltan, ouro, cacau</span></div>
     <div class="chave"><b>3. Estado frágil</b><span>golpes no Sahel, guerra no Sudão</span></div>
     <div class="chave"><b>4. Disputa de potências</b><span>China, Rússia/Africa Corps, saída da França</span></div>
   </div>
@@ -163,7 +135,7 @@ nav button:hover{border-color:var(--destaque)}
 
 <nav>
   <button id="ant" title="Voltar (seta ←)">← voltar</button>
-  <div style="text-align:center"><div id="pos"></div><div class="dica">setas ou espaço · F = tela cheia · depois de clicar no vídeo, clique fora dele para voltar a usar as setas</div></div>
+  <div id="pos"></div>
   <button id="prox" title="Avançar (seta →)">avançar →</button>
 </nav>
 
