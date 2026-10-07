@@ -1,0 +1,58 @@
+{
+ "partilha": {
+  "arquivo": "partilha.jpg",
+  "titulo": "Scramble-for-Africa-1880-1913.png",
+  "autor": "davidjl123 / Somebody500",
+  "licenca": "CC BY-SA 4.0",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Scramble-for-Africa-1880-1913.png"
+ },
+ "etnias": {
+  "arquivo": "etnias.jpg",
+  "titulo": "Africa ethnic groups 1996.png",
+  "autor": "United States. Central Intelligence Agency.",
+  "licenca": "Public domain",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Africa_ethnic_groups_1996.png"
+ },
+ "cobalto": {
+  "arquivo": "cobalto.jpg",
+  "titulo": "Artisanal cobalt miners in the Democratic Republic of Congo.jpg",
+  "autor": "The International Institute for Environment and Development",
+  "licenca": "CC BY 2.5",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Artisanal_cobalt_miners_in_the_Democratic_Republic_of_Congo.jpg"
+ },
+ "ferrovia": {
+  "arquivo": "ferrovia.jpg",
+  "titulo": "Express passenger train on the Mombasa - Nairobi Standard Gauge Railway (SGR).jpg",
+  "autor": "TTC dude",
+  "licenca": "CC BY-SA 4.0",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Express_passenger_train_on_the_Mombasa_-_Nairobi_Standard_Gauge_Railway_(SGR).jpg"
+ },
+ "sahel": {
+  "arquivo": "sahel.jpg",
+  "titulo": "Sahel map.png",
+  "autor": "Mr DSeven",
+  "licenca": "CC BY 4.0",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Sahel_map.png"
+ },
+ "sahelcrise": {
+  "arquivo": "sahelcrise.jpg",
+  "titulo": "20200513 Sahel Regional Crisis April2020.png",
+  "autor": "ERCC - Emergency Response Coordination Centre",
+  "licenca": "Public domain",
+  "pagina": "https://commons.wikimedia.org/wiki/File:20200513_Sahel_Regional_Crisis_April2020.png"
+ },
+ "sudao": {
+  "arquivo": "sudao.jpg",
+  "titulo": "Civil war in Sudan.png",
+  "autor": "Nom Katan",
+  "licenca": "CC0",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Civil_war_in_Sudan.png"
+ },
+ "darfur": {
+  "arquivo": "darfur.jpg",
+  "titulo": "Darfur location map.png",
+  "autor": "",
+  "licenca": "CC BY-SA 3.0",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Darfur_location_map.png"
+ }
+}
