@@ -62,6 +62,37 @@ nav button:hover{border-color:var(--destaque)}
 .fig img{cursor:zoom-in}
 img.zoom{position:fixed;inset:0;width:100vw;height:100vh;max-width:none;max-height:none;object-fit:contain;background:#000;z-index:50;cursor:zoom-out;border-radius:0}
 .dica{font-size:1.7vh;color:#6f7780}
+/* ANIMAÇÃO (pedido dele, 07/10/2026: «anime os slides»). Tudo entra sozinho ao chegar na tela:
+   uma seta continua sendo uma tela. Só "backwards": quando a animação acaba não sobra transform,
+   senão o zoom da imagem (position:fixed) passaria a ficar preso dentro da tela. */
+@keyframes entraDir{from{opacity:0;transform:translateX(4vw)}}
+@keyframes entraEsq{from{opacity:0;transform:translateX(-4vw)}}
+@keyframes sobe{from{opacity:0;transform:translateY(2.2vh)}}
+@keyframes desce{from{opacity:0;transform:translateY(-1.5vh)}}
+@keyframes cresce{from{opacity:0;transform:scale(.94)}}
+body[data-dir=frente] .tela.ativa{animation:entraDir .45s cubic-bezier(.2,.7,.2,1) backwards}
+body[data-dir=tras] .tela.ativa{animation:entraEsq .45s cubic-bezier(.2,.7,.2,1) backwards}
+.tela.ativa .topo{animation:desce .5s .1s ease-out backwards}
+.tela.ativa .cols h3{animation:sobe .45s .2s ease-out backwards}
+.tela.ativa .cols li{animation:sobe .45s ease-out backwards}
+.tela.ativa .col li:nth-child(1){animation-delay:.3s}.tela.ativa .col li:nth-child(2){animation-delay:.42s}
+.tela.ativa .col li:nth-child(3){animation-delay:.54s}.tela.ativa .col li:nth-child(4){animation-delay:.66s}
+.tela.ativa .col li:nth-child(5){animation-delay:.78s}.tela.ativa .col li:nth-child(6){animation-delay:.9s}
+.tela.ativa .col+.col h3{animation-delay:.9s}
+.tela.ativa .col+.col li:nth-child(1){animation-delay:1.0s}.tela.ativa .col+.col li:nth-child(2){animation-delay:1.12s}
+.tela.ativa .col+.col li:nth-child(3){animation-delay:1.24s}.tela.ativa .col+.col li:nth-child(4){animation-delay:1.36s}
+.tela.ativa .col+.col li:nth-child(5){animation-delay:1.48s}.tela.ativa .col+.col li:nth-child(6){animation-delay:1.6s}
+.tela.ativa .quadro img:not(.zoom){animation:cresce .7s .15s cubic-bezier(.2,.7,.2,1) backwards}
+.tela.ativa .leg{animation:sobe .5s .6s ease-out backwards}
+.tela.ativa .video{animation:cresce .5s .1s ease-out backwards}
+.capa.ativa .num{animation:desce .5s .1s ease-out backwards}
+.capa.ativa h1{animation:sobe .6s .2s ease-out backwards}
+.capa.ativa h2{animation:sobe .6s .4s ease-out backwards}
+.capa.ativa .chave{animation:sobe .5s ease-out backwards}
+.capa.ativa .chave:nth-child(1){animation-delay:.6s}.capa.ativa .chave:nth-child(2){animation-delay:.75s}
+.capa.ativa .chave:nth-child(3){animation-delay:.9s}.capa.ativa .chave:nth-child(4){animation-delay:1.05s}
+.capa.ativa #relogio{animation:cresce .6s .2s ease-out backwards}
+@media (prefers-reduced-motion:reduce){*{animation:none!important}}
 </style>
 </head>
 <body>
@@ -216,6 +247,7 @@ function iframe(t){
   return f;
 }
 function mostrar(n){
+  document.body.dataset.dir = n<atual ? 'tras' : 'frente';
   atual=Math.max(0,Math.min(telas.length-1,n));
   document.querySelectorAll('img.zoom').forEach(i=>i.classList.remove('zoom'));
   telas.forEach((t,i)=>{
